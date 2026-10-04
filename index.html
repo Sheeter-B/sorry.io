@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Tee 💗</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffe4ec;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .heart {
+            font-size: 80px;
+            animation: beat 1s infinite;
+        }
+
+        h1 {
+            color: #e75480;
+            font-size: 45px;
+            margin-top: 20px;
+            letter-spacing: 3px;
+        }
+
+        .hearts {
+            position: absolute;
+            font-size: 25px;
+            animation: float 5s infinite linear;
+        }
+
+        .one { left: 15%; }
+        .two { left: 45%; animation-delay: 2s; }
+        .three { left: 75%; animation-delay: 1s; }
+
+        @keyframes beat {
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes float {
+            from {
+                bottom: -50px;
+                opacity: 1;
+            }
+            to {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hearts one">💕</div>
+    <div class="hearts two">💗</div>
+    <div class="hearts three">💖</div>
+
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>SORRY, TEE</h1>
+    </div>
+
+</body>
+</html>
